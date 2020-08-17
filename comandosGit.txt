@@ -1,6 +1,7 @@
 $ git init //inicializar el repositorio
 $ git add nombre_de_archivo.extencion //guardar archivo
 $ git commit -m “Mensaje”// Agregamos los cambios para el repositorio
+si entra en el vim , salir con: esc + shift + "z""z"
 $ git add .// Agregar los cambios de la carpeta en la que nos encontramos agregar todo
 $ git status // visualizar cambios
 $ git log nombre_de_archivos.extencion //historico de cambios con detalles
