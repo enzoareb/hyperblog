@@ -16,8 +16,13 @@ $ git add archivo.extencion //guardar archivo en staging
 $ git add .// Agregar todos los cambios los archivos de la carpeta en la que nos encontramos
 $ git commit -m “Mensaje”// Agregamos los cambios para el repositorio #si no agregamos mensaje, 
                             entra en el vim , salir con: esc + shift + "z""z
-$ git push //envia a otro repositorio remoto 
+----------------------------------------------------------------------------------------------
+$ git push //envia a repositorio remoto (github)
 $ git pull //traer repositorio remoto
+$ git clone url_del_servidor_remoto//permite descargar los archivos de la última versión
+                             de la rama principal y todo el historial de cambios en la carpeta de trabajo y repositorio local
+$ git fetch//trae actualizaciones del repositorio remoto y lo guarda en nuestro repositorio local.
+$ git merge//trae los últimos cambios del servidor remoto a nuestro directorio de trabajo.
 ----------------------------------------------------------------------------------------------
 $ git status // visualizar cambios
 $ git log archivo.extencion //historial de cambios con detalles
