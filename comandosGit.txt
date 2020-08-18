@@ -19,7 +19,7 @@ $ git commit -m “Mensaje”// Agregamos los cambios para el repositorio #si no
 $ git commit -am//funciona si les ha hecho $git add previamente.
                 Agrega todos los archivos desde el directorio de trabajo al repositorio local
 ----------------------------------------------------------------------------------------------
-$   git push //envia a repositorio remoto (github)
+$ git push //envia a repositorio remoto (github)
 $ git pull //traer repositorio remoto
 $ git clone url_del_servidor_remoto//permite descargar los archivos de la última versión
                              de la rama principal y todo el historial de cambios en la carpeta de trabajo y repositorio local
@@ -56,3 +56,4 @@ $ git branch -nombre de la rama-// crea una nueva rama
 $ git checkout -nombre de la rama-//el head de traslada de una rama a otra.
 $ git checkout -b rama// Crea una rama y nos mueve a ella automáticamente, 
                         Es decir, es la combinación de git brach y git checkout al mismo tiempo.
+$ git merge “nombre de la rama que se quiere fusionar”// une dos ramas del repositorio
