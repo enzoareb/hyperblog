@@ -16,8 +16,10 @@ $ git add archivo.extencion //guardar archivo en staging
 $ git add .// Agregar todos los cambios los archivos de la carpeta en la que nos encontramos
 $ git commit -m “Mensaje”// Agregamos los cambios para el repositorio #si no agregamos mensaje, 
                             entra en el vim , salir con: esc + shift + "z""z
+$ git commit -am//funciona si les ha hecho $git add previamente.
+                Agrega todos los archivos desde el directorio de trabajo al repositorio local
 ----------------------------------------------------------------------------------------------
-$ git push //envia a repositorio remoto (github)
+$   git push //envia a repositorio remoto (github)
 $ git pull //traer repositorio remoto
 $ git clone url_del_servidor_remoto//permite descargar los archivos de la última versión
                              de la rama principal y todo el historial de cambios en la carpeta de trabajo y repositorio local
@@ -48,3 +50,9 @@ $ git reset + ID del commit + --soft// Borramos todo el historial y los registro
 $ git reset HEAD// sacar archivos del área de Staging. No para borrarlos ni nada de eso, 
                     solo para que los últimos cambios de estos archivos no se envíen al último commit
                      a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add
+---------------------------------------------------------------------------------------------
+#ramas
+$ git branch -nombre de la rama-// crea una nueva rama
+$ git checkout -nombre de la rama-//el head de traslada de una rama a otra.
+$ git checkout -b rama// Crea una rama y nos mueve a ella automáticamente, 
+                        Es decir, es la combinación de git brach y git checkout al mismo tiempo.
