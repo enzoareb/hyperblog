@@ -20,9 +20,6 @@ $ git commit -am//funciona si les ha hecho $git add previamente.
                 Agrega todos los archivos desde el directorio de trabajo al repositorio local
 ----------------------------------------------------------------------------------------------
 #GITHUB
-$ git remote add origin URL// guardar la url del repositorio de github
-$ git remote -v// verificar que la URL se haya guardado corretamente, nos deberia traer la url 
-                donde hariamos el fecht y el push
 $ git pull origin master//traer repositorio remoto de github al local
 $ git pull origin master --alow-unrelated-histories// trae la versión del repositorio remoto y 
                 hacer merge para crear un commit con los archivos de ambas partes.
@@ -64,7 +61,10 @@ $ git checkout -b rama// Crea una rama y nos mueve a ella automáticamente,
                         Es decir, es la combinación de git brach y git checkout al mismo tiempo.
 $ git merge “nombre de la rama que se quiere fusionar”// une dos ramas del repositorio
 ---------------------------------------------------------------------------------------------
-#CONFIGURACION LLAVES SSH DE GITHUB
+#CONFIGURACION LLAVES DE GITHUB : URL Y SSH
+$ git remote add origin URL// guardar la url del repositorio de github
+$ git remote -v// verificar que la URL se haya guardado corretamente, nos deberia traer la url 
+                donde hariamos el fecht y el push
 Generar una nueva llave SSH: (Windows O Linux)
 $ ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
 Comprobar proceso y agregarlo (Windows)
