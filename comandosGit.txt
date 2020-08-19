@@ -19,7 +19,7 @@ $ git commit -m “Mensaje”// Agregamos los cambios para el repositorio #si no
 $ git commit -am//funciona si les ha hecho $git add previamente.
                 Agrega todos los archivos desde el directorio de trabajo al repositorio local
 ----------------------------------------------------------------------------------------------
-#github
+#GITHUB
 $ git remote add origin URL// guardar la url del repositorio de github
 $ git remote -v// verificar que la URL se haya guardado corretamente, nos deberia traer la url 
                 donde hariamos el fecht y el push
@@ -36,7 +36,7 @@ $ git status // visualizar cambios
 $ git log archivo.extencion //historial de cambios con detalles
 $ git diff commitA commitB //comparar versiones
 ----------------------------------------------------------------------------------------------
-##volver en el tiempo
+#VOLVER EN EL TIEMPO
 --nos deja ir, mirar, pasear y volver.
 $ git checkout + ID del commit //Podemos volver a cualquier versión anterior de un archivo específico 
                                 o incluso del proyecto entero. Esta también es la forma de crear ramas
@@ -57,9 +57,16 @@ $ git reset HEAD// sacar archivos del área de Staging. No para borrarlos ni nad
                     solo para que los últimos cambios de estos archivos no se envíen al último commit
                      a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add
 ---------------------------------------------------------------------------------------------
-#ramas
+#RAMAS
 $ git branch -nombre de la rama-// crea una nueva rama
 $ git checkout -nombre de la rama-//el head de traslada de una rama a otra.
 $ git checkout -b rama// Crea una rama y nos mueve a ella automáticamente, 
                         Es decir, es la combinación de git brach y git checkout al mismo tiempo.
 $ git merge “nombre de la rama que se quiere fusionar”// une dos ramas del repositorio
+---------------------------------------------------------------------------------------------
+#CONFIGURACION LLAVES SSH DE GITHUB
+Generar una nueva llave SSH: (Windows O Linux)
+$ ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+Comprobar proceso y agregarlo (Windows)
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
