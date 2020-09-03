@@ -1,5 +1,0 @@
-archivo de prueba 
-evaluando git 
-borrando y cambiando 
-
-agrego otra linea mas
